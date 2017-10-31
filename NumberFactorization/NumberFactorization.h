@@ -14,6 +14,7 @@ public:
   std::string toString();
 private:
   void factorize();
+  void checkFactorization();
   uint64_t number;
   std::vector<uint64_t> factorization;
 };

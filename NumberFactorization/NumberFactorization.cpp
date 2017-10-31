@@ -34,3 +34,14 @@ void NumberFactorization::factorize() {
     }
   }
 }
+
+void NumberFactorization::checkFactorization() {
+  uint64_t n = 1;
+  for (int i = 0, length = factorization.size(); i < length; i++) {
+    n *= factorization[i];
+  }
+
+  if (n != number) {
+    std::cerr << "Factorization is not working properly" << std::endl;
+  }
+}
