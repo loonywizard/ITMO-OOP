@@ -37,7 +37,9 @@ public:
 
   const char* what() const throw() {
     std::string message = "Cannot open file " + filename;
-    return message.c_str();
+    char* charMessage = new char[message.length() + 1];
+    std::strcpy(charMessage, message.c_str());
+    return charMessage;
   }
 private:
   std::string filename;
