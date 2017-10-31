@@ -13,7 +13,7 @@ public:
   NumberFactorization(const uint64_t _number);
   std::string toString();
 private:
-  void factorize() const;
+  void factorize();
   uint64_t number;
   std::vector<uint64_t> factorization;
 };
