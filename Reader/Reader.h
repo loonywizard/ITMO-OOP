@@ -15,6 +15,7 @@ public:
   Reader();
   Reader(const char* filename);
   void init(const char* filename);
+  void close();
   bool getIsEndOfFile();
   uint64_t readNumber();
 private:

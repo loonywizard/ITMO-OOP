@@ -1,17 +1,18 @@
 #include <iostream>
 
 #include "Reader/Reader.h"
-#include <cstdint>
+#include "Writer/Writer.h"
 
 int main() {
   try {
-    Reader reader("/home/vladimir/study/cpp/lab4/data.1txt");
-    uint64_t a = reader.readNumber();
-    uint64_t b = reader.readNumber();
-    uint64_t c = reader.readNumber();
-    std::cout << a << ", " << b << ", " << c << std::endl;
+    Reader reader("/home/vladimir/study/cpp/lab4/data.in");
+    Writer writer("/home/vladimir/study/cpp/lab4/data.out");
+
+    reader.close();
+    writer.close();
   } catch (ReaderException& exception) {
     std::cerr << exception.what() << std::endl;
   }
+
   return 0;
 }

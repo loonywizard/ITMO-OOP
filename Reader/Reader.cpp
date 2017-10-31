@@ -18,14 +18,18 @@ void Reader::init(const char* filename) {
   }
 }
 
+void Reader::close() {
+  file.close();
+}
+
 bool Reader::getIsEndOfFile() {
   return file.eof();
 }
 
 uint64_t Reader::readNumber() {
   if (file.eof()) {
+    close();
     throw (EOFException());
-    file.close();
   }
 
   uint64_t number;
