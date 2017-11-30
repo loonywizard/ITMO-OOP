@@ -5,8 +5,6 @@
 #include "NumberFactorization/NumberFactorization.h"
 
 int main() {
-
-
   try {
     Reader reader("../data.in");
     Writer writer("../data.out");
