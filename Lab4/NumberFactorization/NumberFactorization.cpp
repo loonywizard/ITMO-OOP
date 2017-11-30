@@ -1,7 +1,3 @@
-//
-// Created by vladimir on 10/31/17.
-//
-
 #include <iostream>
 #include <vector>
 #include "NumberFactorization.h"

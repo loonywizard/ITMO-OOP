@@ -1,7 +1,3 @@
-//
-// Created by vladimir on 10/31/17.
-//
-
 #ifndef LAB_4_READER_H
 #define LAB_4_READER_H
 

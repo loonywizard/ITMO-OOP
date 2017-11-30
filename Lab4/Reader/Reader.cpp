@@ -1,7 +1,3 @@
-//
-// Created by vladimir on 10/31/17.
-//
-
 #include "Reader.h"
 
 Reader::Reader() = default;
