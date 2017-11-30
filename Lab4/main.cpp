@@ -5,9 +5,11 @@
 #include "NumberFactorization/NumberFactorization.h"
 
 int main() {
+
+
   try {
-    Reader reader("/home/vladimir/development/OOP/lab4/data.in");
-    Writer writer("/home/vladimir/development/OOP/lab4/data.out");
+    Reader reader("../data.in");
+    Writer writer("../data.out");
 
     while (reader.getIsEndOfFile() == false) {
       uint64_t number = reader.readNumber();
