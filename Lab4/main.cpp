@@ -6,8 +6,8 @@
 
 int main() {
   try {
-    Reader reader("/home/vladimir/study/cpp/lab4/data.in");
-    Writer writer("/home/vladimir/study/cpp/lab4/data.out");
+    Reader reader("/home/vladimir/development/OOP/lab4/data.in");
+    Writer writer("/home/vladimir/development/OOP/lab4/data.out");
 
     while (reader.getIsEndOfFile() == false) {
       uint64_t number = reader.readNumber();
